@@ -1,0 +1,59 @@
+@import "normalize.css";
+
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v28-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/raleway-v28-cyrillic_latin-regular.woff') format('woff');
+}
+
+:root {
+    --dark: #241D1C;
+    --white: #F6F3E3;
+    --gray: #BFBDB2;
+    --yellow: #EFE7BE;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    background: var(--dark);
+    color: var(--white);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    object-fit: cover;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container {
+    max-width: 1312px;
+    padding: 0 48px;
+    margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 24px;
+    }
+}
