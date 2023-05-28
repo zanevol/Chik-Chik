@@ -122,7 +122,6 @@ export const initReserve = () => {
             body: json
         })
         const data = await response.json();
-        console.log(data);
         addDisabled(
             [
                 ...reserveForm.elements['service'],
